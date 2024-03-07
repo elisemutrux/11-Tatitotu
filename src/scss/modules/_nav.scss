@@ -1,0 +1,22 @@
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: #ff8f00;
+  padding: 17px;
+  border-radius: 20px;
+  margin-top: -28px;
+
+  li {
+    background-image: url(../../img/list-puce.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}

@@ -13,8 +13,9 @@
     color: black;
   }
 
-  &.t-searcher {
+  &.t-search {
     background: #ff6abc33;
+    margin-top: 0;
 
     &::placeholder {
       color: #c6649a94;
@@ -27,5 +28,5 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px 40px 30px 40px;
+  padding: 0 40px 30px 40px;
 }

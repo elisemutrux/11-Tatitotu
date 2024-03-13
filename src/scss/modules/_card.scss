@@ -1,0 +1,49 @@
+.card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 12px 12px 0px 0px rgba(255, 68, 0, 0.18);
+
+  .card-title {
+    background: #f40;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    border-radius: 18px 18px 0px 0px;
+    padding: 8px 0px;
+  }
+}
+
+.card-box-verbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 40px 30px 40px;
+}
+
+.card-verbs {
+  width: 476px;
+  height: 67px;
+  padding: 2px 52px;
+  border-radius: 18px;
+  border: 2px solid #ff6abc80;
+  font-size: 18px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::placeholder {
+    color: black;
+  }
+
+  &.t-searcher {
+    background: #ff6abc33;
+
+    &::placeholder {
+      color: #c6649a94;
+    }
+  }
+}

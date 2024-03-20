@@ -5,4 +5,17 @@
   border-radius: 18px;
   padding: 8px 22px;
   margin-left: 18px;
+  transition: ease-in 0.1s;
+
+  &:hover {
+    background: #d3549a;
+  }
 }
+
+// .close:hover .img1 {
+//   display: none;
+// }
+
+// .close:hover .img2 {
+//   display: block;
+// }

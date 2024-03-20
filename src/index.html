@@ -74,7 +74,7 @@
               />
               <div class="verbs-card">
                 Avoir
-                <img src="../img/×.svg" />
+                <div class="verbs-cross"></div>
               </div>
               <div class="verbs-card">
                 Être
@@ -90,6 +90,55 @@
               </div>
             </div>
           </div>
+          <div class="card">
+            <h2 class="card-title">options</h2>
+            <div class="option-selector">
+              <label for="question">Nombre de questions</label>
+              <select id="question" name="nbr-question">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+              </select>
+            </div>
+            <div class="radio-selector">
+              <div>Type</div>
+              <div>
+                <label for="normal">
+                  <input
+                    type="radio"
+                    id="normal"
+                    name="type-options"
+                    value="normal"
+                  />
+                  <div class="radio-selector-button t-first">Normal</div>
+                </label>
+                <label for="mode-tenses">
+                  <input
+                    type="radio"
+                    id="mode-tenses"
+                    name="type-options"
+                    value="mode-tenses"
+                  />
+                  <div class="radio-selector-button t-last">
+                    Trouver mode + temps
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="checkbox">
+              <label class="switch checkbox-switch">
+                Options d'impression
+                <input type="checkbox" />
+                <div class="switch-wrapper">
+                  <div class="switch-inner"></div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="save">Sauvegarder mon défi</div>
         </div>
         <div class="col-6">
           <div class="card">
@@ -356,9 +405,22 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">footer</div>
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <img class="footer-img" src="../img/logo.svg" alt="Tatitotu" />
+            <p class="footer-text">
+              Ce site a été crée par un professeur vaudois diplômé.
+            </p>
+            <p>
+              Me contacter :
+              <a href="mailto:christophe.roulet@edu-vd.ch"
+                >christophe.roulet@edu-vd.ch</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/main.js" type="module"></script>

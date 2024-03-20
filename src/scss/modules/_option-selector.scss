@@ -1,1 +1,14 @@
+.option-selector {
+  padding: 30px 40px 29px;
+  display: flex;
+  justify-content: space-between;
 
+  & select {
+    background: #ff6abc26;
+    border: none;
+    color: #ff6abc;
+    padding: 7px 25px;
+    border-radius: 18px;
+    font-size: 15px;
+  }
+}

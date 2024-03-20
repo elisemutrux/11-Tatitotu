@@ -1,0 +1,35 @@
+.radio-selector {
+  padding: 20px 40px 29px;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+  }
+
+  input {
+    display: none;
+
+    &:checked + .radio-selector-button {
+      background: #ff6abc;
+      color: #ffe9f5;
+    }
+  }
+}
+
+.radio-selector-button {
+  color: #ff6abc;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 7px 25px;
+  background: #ffe9f5;
+  border-radius: 18px;
+
+  &.t-first {
+    border-radius: 18px 0 0 18px;
+  }
+
+  &.t-last {
+    border-radius: 0 18px 18px 0;
+  }
+}

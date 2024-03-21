@@ -5,6 +5,44 @@
   font-weight: 400;
   border-radius: 18px;
   background: #f40;
-  padding: 8px;
   margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+
+  .save-code {
+    text-transform: uppercase;
+  }
+
+  .save-copie {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-right: 20px;
+    }
+  }
+}
+
+.save.is-open .save-check {
+  transform: translateX(0);
+}
+
+.save-no-check {
+  padding: 8px;
+}
+
+.save-check {
+  text-align: left;
+  padding: 8 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 18px;
+  background: #ff8f00;
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
 }

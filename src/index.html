@@ -13,539 +13,582 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <div class="l-header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <div class="header">
-              <img class="header-logo" src="img/logo.svg" alt="Tatitotu" />
-              <div class="header-buttons">
-                <div class="button">
-                  <p>Excercer</p>
-                </div>
-                <div class="button">
-                  <p>Imprimer</p>
-                </div>
-                <div class="text-placeholder">
-                  <input
-                    type="text"
-                    placeholder="Entrer le code"
-                    name="firstname"
-                  />
-                </div>
-                <div class="button">
-                  <p>?</p>
+    <div class="main-body">
+      <div class="l-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="header">
+                <img class="header-logo" src="img/logo.svg" alt="Tatitotu" />
+                <div class="header-buttons">
+                  <div class="button excercer-button">
+                    <p>Excercer</p>
+                  </div>
+                  <div class="button">
+                    <p>Imprimer</p>
+                  </div>
+                  <div class="text-placeholder">
+                    <input
+                      type="text"
+                      placeholder="Entrer le code"
+                      name="firstname"
+                    />
+                  </div>
+                  <div class="button">
+                    <p>?</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <ul class="nav-list">
-            <li>5H</li>
-            <li>6H</li>
-            <li>7H</li>
-            <li>8H</li>
-            <li>9H</li>
-            <li>10H</li>
-            <li>11H</li>
-            <li>Par groupe</li>
-            <li>Difficiles</li>
-            <li>Pronominaux</li>
-            <li>FLE</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="card">
-            <h2 class="card-title">mes verbes</h2>
-            <p class="card-button">Tous supprimer</p>
-            <div class="box-verbs">
-              <input
-                class="verbs-card t-search"
-                type="text"
-                placeholder="Entrer un verbe"
-                name="firstname"
-              />
-              <div class="verbs-card">
-                Avoir
-                <div class="verbs-cross">
-                  <img class="no-hover" src="./img/×.svg" />
-                  <img class="hover" src="./img/×-hover.svg" />
-                </div>
-              </div>
-              <div class="verbs-card">
-                Être
-                <div class="verbs-cross">
-                  <img class="no-hover" src="./img/×.svg" />
-                  <img class="hover" src="./img/×-hover.svg" />
-                </div>
-              </div>
-              <div class="verbs-card">
-                Boire
-                <div class="verbs-cross">
-                  <img class="no-hover" src="./img/×.svg" />
-                  <img class="hover" src="./img/×-hover.svg" />
-                </div>
-              </div>
-              <div class="verbs-card">
-                Manger
-                <div class="verbs-cross">
-                  <img class="no-hover" src="./img/×.svg" />
-                  <img class="hover" src="./img/×-hover.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <h2 class="card-title">options</h2>
-            <div class="option-selector">
-              <label for="question">Nombre de questions</label>
-              <select id="question" name="nbr-question">
-                <option value="5">5</option>
-                <option value="10">10</option>
-                <option value="20">20</option>
-                <option value="30">30</option>
-                <option value="40">40</option>
-                <option value="50">50</option>
-              </select>
-            </div>
-            <div class="radio-selector">
-              <div>Type</div>
-              <div>
-                <label for="normal">
-                  <input
-                    type="radio"
-                    id="normal"
-                    name="type-options"
-                    value="normal"
-                  />
-                  <div class="radio-selector-button t-first">Normal</div>
-                </label>
-                <label for="mode-tenses">
-                  <input
-                    type="radio"
-                    id="mode-tenses"
-                    name="type-options"
-                    value="mode-tenses"
-                  />
-                  <div class="radio-selector-button t-last">
-                    Trouver mode + temps
-                  </div>
-                </label>
-              </div>
-            </div>
-            <div class="checkbox">
-              <label class="switch checkbox-switch">
-                Options d'impression
-                <input type="checkbox" />
-                <div class="switch-wrapper">
-                  <div class="switch-inner"></div>
-                </div>
-              </label>
-            </div>
-          </div>
-          <div class="save">
-            <p class="save-no-check">Sauvegarder mon défi</p>
-            <div class="save-check">
-              <p class="save-code">code: xy7-rt67-6009</p>
-              <div class="save-copie">
-                <a href="">copier-coller</a>
-                <img src="img/symbole-copier-coller.svg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="card">
-            <h2 class="card-title">mes temps</h2>
-            <div class="card-box-button">
-              <p class="card-button">Tous cocher</p>
-              <a href="" class="card-button">Tous supprimer</a>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <h3 class="list-checkbox-title">Indicatif</h3>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Je mange</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                </div>
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Je mangeais</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Imparfait
-                  </label>
-                </div>
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Je mangerai</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Futur
-                  </label>
-                </div>
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Je mangeai</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé simple
-                  </label>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : J'ai mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé composé
-                  </label>
-                </div>
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : J'avais mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Plus-que-parfait
-                  </label>
-                </div>
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : J'aurai mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Futur antérieur
-                  </label>
-                </div>
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : J'eus mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé antérieur
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <h3 class="list-checkbox-title">Impératif</h3>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Mange!</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Aie mangé!</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <h3 class="list-checkbox-title">Subjonctif</h3>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Que je mange</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                </div>
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Que je mangeasse</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Imparfait
-                  </label>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Que j'aie mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé
-                  </label>
-                </div>
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Que j'eusse mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Plus-que-prafait
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <h3 class="list-checkbox-title">Conditionnel</h3>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : Je mangerais</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                </div>
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : J'aurais mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé 1
-                  </label>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : J'eusse mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé 2
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <h3 class="list-checkbox-title">Participe</h3>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : mangeant</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <h3 class="list-checkbox-title">Gérondif</h3>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox t-last-of-column">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : En mangeant</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Présent
-                  </label>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="list-checkbox t-last-of-column">
-                  <div class="list-checkbox-info">
-                    <div class="list-checkbox-exemple">
-                      <p>Exemple : En ayant mangé</p>
-                    </div>
-                    <img src="./img/info.svg" />
-                  </div>
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <div class="switch-wrapper">
-                      <div class="switch-inner"></div>
-                    </div>
-                    Passé
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="footer-inner">
-              <img class="footer-img" src="img/logo.svg" alt="Tatitotu" />
-              <p class="footer-text">
-                Ce site a été crée par un professeur vaudois diplômé.
-              </p>
-              <p>
-                Me contacter :
-                <a href="mailto:christophe.roulet@edu-vd.ch"
-                  >christophe.roulet@edu-vd.ch</a
-                >
-              </p>
+            <ul class="nav-list">
+              <li>5H</li>
+              <li>6H</li>
+              <li>7H</li>
+              <li>8H</li>
+              <li>9H</li>
+              <li>10H</li>
+              <li>11H</li>
+              <li>Par groupe</li>
+              <li>Difficiles</li>
+              <li>Pronominaux</li>
+              <li>FLE</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <h2 class="card-title">mes verbes</h2>
+              <p class="card-button">Tous supprimer</p>
+              <div class="box-verbs">
+                <input
+                  class="verbs-card t-search"
+                  type="text"
+                  placeholder="Entrer un verbe"
+                  name="firstname"
+                />
+                <div class="verbs-card">
+                  Avoir
+                  <div class="verbs-cross">
+                    <img class="no-hover" src="./img/×.svg" />
+                    <img class="hover" src="./img/×-hover.svg" />
+                  </div>
+                </div>
+                <div class="verbs-card">
+                  Être
+                  <div class="verbs-cross">
+                    <img class="no-hover" src="./img/×.svg" />
+                    <img class="hover" src="./img/×-hover.svg" />
+                  </div>
+                </div>
+                <div class="verbs-card">
+                  Boire
+                  <div class="verbs-cross">
+                    <img class="no-hover" src="./img/×.svg" />
+                    <img class="hover" src="./img/×-hover.svg" />
+                  </div>
+                </div>
+                <div class="verbs-card">
+                  Manger
+                  <div class="verbs-cross">
+                    <img class="no-hover" src="./img/×.svg" />
+                    <img class="hover" src="./img/×-hover.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h2 class="card-title">options</h2>
+              <div class="option-selector">
+                <label for="question">Nombre de questions</label>
+                <select id="question" name="nbr-question">
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                  <option value="50">50</option>
+                </select>
+              </div>
+              <div class="radio-selector">
+                <div>Type</div>
+                <div>
+                  <label for="normal">
+                    <input
+                      type="radio"
+                      id="normal"
+                      name="type-options"
+                      value="normal"
+                    />
+                    <div class="radio-selector-button t-first">Normal</div>
+                  </label>
+                  <label for="mode-tenses">
+                    <input
+                      type="radio"
+                      id="mode-tenses"
+                      name="type-options"
+                      value="mode-tenses"
+                    />
+                    <div class="radio-selector-button t-last">
+                      Trouver mode + temps
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="checkbox">
+                <label class="switch checkbox-switch">
+                  Options d'impression
+                  <input type="checkbox" />
+                  <div class="switch-wrapper">
+                    <div class="switch-inner"></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="save">
+              <p class="save-no-check">Sauvegarder mon défi</p>
+              <div class="save-check">
+                <p class="save-code">code: xy7-rt67-6009</p>
+                <div class="save-copie">
+                  <a href="">copier-coller</a>
+                  <img src="img/symbole-copier-coller.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <h2 class="card-title">mes temps</h2>
+              <div class="card-box-button">
+                <p class="card-button">Tous cocher</p>
+                <a href="" class="card-button">Tous supprimer</a>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="list-checkbox-title">Indicatif</h3>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Je mange</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                  </div>
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Je mangeais</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Imparfait
+                    </label>
+                  </div>
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Je mangerai</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Futur
+                    </label>
+                  </div>
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Je mangeai</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé simple
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : J'ai mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé composé
+                    </label>
+                  </div>
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : J'avais mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Plus-que-parfait
+                    </label>
+                  </div>
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : J'aurai mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Futur antérieur
+                    </label>
+                  </div>
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : J'eus mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé antérieur
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <h3 class="list-checkbox-title">Impératif</h3>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Mange!</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Aie mangé!</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <h3 class="list-checkbox-title">Subjonctif</h3>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Que je mange</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                  </div>
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Que je mangeasse</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Imparfait
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Que j'aie mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé
+                    </label>
+                  </div>
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Que j'eusse mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Plus-que-prafait
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <h3 class="list-checkbox-title">Conditionnel</h3>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : Je mangerais</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                  </div>
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : J'aurais mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé 1
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : J'eusse mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé 2
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <h3 class="list-checkbox-title">Participe</h3>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : mangeant</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <h3 class="list-checkbox-title">Gérondif</h3>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox t-last-of-column">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : En mangeant</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Présent
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="list-checkbox t-last-of-column">
+                    <div class="list-checkbox-info">
+                      <div class="list-checkbox-exemple">
+                        <p>Exemple : En ayant mangé</p>
+                      </div>
+                      <img src="./img/info.svg" />
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <div class="switch-wrapper">
+                        <div class="switch-inner"></div>
+                      </div>
+                      Passé
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="footer-inner">
+                <img class="footer-img" src="img/logo.svg" alt="Tatitotu" />
+                <p class="footer-text">
+                  Ce site a été crée par un professeur vaudois diplômé.
+                </p>
+                <p>
+                  Me contacter :
+                  <a href="mailto:christophe.roulet@edu-vd.ch"
+                    >christophe.roulet@edu-vd.ch</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="excercice-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-1">
+            <div class="excercice">
+              <div class="card">
+                <h2 class="card-title">
+                  <div class="excercice-close">
+                    <img src="img/×-bold.svg" alt="x" />
+                  </div>
+                </h2>
+                <div class="excerice-part-excercice">
+                  <div class="excercice-progression">
+                    <p>1/20</p>
+                    <div class="excercice-progression-bar"></div>
+                  </div>
+                  <p class="excercice-instruction">
+                    Conjugue le verbe donné au temps et au mode indiqués
+                  </p>
+                  <div class="excercice-instruction-verbs">
+                    <div class="excercice-box-instruction">Nous</div>
+                    <div class="excercice-box-instruction">Faire</div>
+                    <div class="excercice-box-instruction">
+                      Passé simple (indicatif)
+                    </div>
+                  </div>
+                  <div class="excercice-forms-answer">
+                    <div class="excercice-text-answer">
+                      <input type="text" name="firstname" />
+                    </div>
+                    <div class="excercice-valide">
+                      <img src="img/valide.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

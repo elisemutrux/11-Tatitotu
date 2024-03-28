@@ -1,0 +1,98 @@
+.excercice-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 30px;
+}
+
+.excercice-instruction {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  margin-top: 59px;
+}
+
+.excerice-part-excercice {
+  padding: 21px 15px 160px;
+}
+
+.excercice-box-instruction {
+  border-radius: 15px;
+  border: 1px solid #ff8f00;
+  background: #ff8f001a;
+  padding: 10px 26px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.excercice-instruction-verbs {
+  display: flex;
+  justify-content: center;
+}
+
+.excercice-progression-bar {
+  border-radius: 10px;
+  border: 1px solid #ff6abc;
+  background: #ff6abc1a;
+  height: 34px;
+  margin-left: 16px;
+  flex-grow: 1;
+}
+
+.excercice-progression {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  p {
+    text-align: center;
+    font-size: 20px;
+    display: inline;
+    font-weight: 400;
+  }
+}
+
+.excercice-text-answer input {
+  height: 46px;
+  width: 366px;
+  border-radius: 15px 0 0 15px;
+  border: 1px solid #ff6abc;
+  background: #ff6abc12;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.excercice-forms-answer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.excercice-valide {
+  border-radius: 0px 15px 15px 0px;
+  background: #ff6abc;
+  width: 49px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.excercice-body {
+  position: fixed;
+  inset: 1;
+  padding-top: 310px;
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(
+      0deg,
+      rgba(254, 229, 203, 0.35) 0%,
+      rgba(254, 229, 203, 0.35) 75%
+    ),
+    rgba(255, 255, 255, 0.75);
+}
+
+.excercice-body.is-open {
+  opacity: 1;
+  pointer-events: all;
+}

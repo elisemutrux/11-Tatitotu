@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+.main-body {
+  position: relative;
+}
+
 img,
 video {
   max-inline-size: 100%;
@@ -58,6 +62,6 @@ video {
 // base rules
 // ==================================== */
 
-.main-body {
-  position: relative;
+li {
+  list-style: none;
 }

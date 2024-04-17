@@ -2,7 +2,11 @@
   padding: 20px 40px 40px;
 }
 
-.switch.checkbox-switch {
+.checkbox-switch {
   display: flex;
   justify-content: space-between;
+
+  input {
+    display: none;
+  }
 }

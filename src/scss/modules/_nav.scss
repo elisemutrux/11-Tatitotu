@@ -8,7 +8,7 @@
   border-radius: 20px;
   margin-top: -28px;
 
-  .list-age {
+  .nav-list-age {
     background-image: url(../img/list-puce.svg);
     background-repeat: no-repeat;
     background-position: right center;
@@ -18,11 +18,7 @@
   }
 }
 
-li {
-  list-style: none;
-}
-
-.list-proposition {
+.nav-list-proposition {
   position: absolute;
   color: black;
   background-image: url(../img/list.svg);
@@ -40,7 +36,7 @@ li {
   font-size: 16px;
 }
 
-.list-age:hover .list-proposition {
+.nav-list-age:hover .nav-list-proposition {
   opacity: 1;
   pointer-events: all;
 }

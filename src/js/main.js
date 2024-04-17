@@ -15,3 +15,24 @@ excerciceOpen.addEventListener("click", function () {
 excerciceClose.addEventListener("click", function () {
   excerciceBox.classList.remove("is-open");
 });
+
+var checkAllTrigger = document.querySelector(".check-all");
+var checkboxes = document.querySelectorAll(".switch input");
+
+var checkAll = function () {
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = true;
+  });
+};
+
+checkAllTrigger.addEventListener("click", checkAll);
+
+var checkRemoveTrigger = document.querySelector(".check-none");
+
+var checkRemove = function () {
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = false;
+  });
+};
+
+checkRemoveTrigger.addEventListener("click", checkRemove);

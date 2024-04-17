@@ -90,6 +90,9 @@
       rgba(254, 229, 203, 0.35) 75%
     ),
     rgba(255, 255, 255, 0.75);
+
+  transition-property: opacity;
+  transition-duration: 0.3s;
 }
 
 .excercice-body.is-open {

@@ -1,6 +1,6 @@
 .verbs-card {
   width: 100%;
-  padding: 20px 52px;
+  padding: 10px 52px;
   border-radius: 18px;
   border: 2px solid #ff6abc80;
   font-size: 18px;
@@ -16,6 +16,7 @@
   &.t-search {
     background: #ff6abc33;
     margin-top: 0;
+    padding: 21px 52px;
 
     &::placeholder {
       color: #c6649a94;
@@ -31,18 +32,17 @@
   padding: 0 40px 30px 40px;
 }
 
-.verbs-cross:hover .no-hover {
-  display: none;
+.verbs-cross {
+  font-size: 20px;
+  color: #ff6abc;
+  width: 44px;
+  height: 44px;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.verbs-cross:hover .hover {
-  display: block;
-}
-
-.verbs-cross .no-hover {
-  display: block;
-}
-
-.verbs-cross .hover {
-  display: none;
+.verbs-cross:hover {
+  font-weight: 900;
 }
